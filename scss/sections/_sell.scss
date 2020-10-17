@@ -3,10 +3,24 @@
     height: 842px;
     background-color: #f6f6f6;
     position: absolute;
+    @include mobile {
+        height: auto;
+        padding-bottom: 15px;
+    }
+    @include tablet {
+        height: auto;
+        padding-bottom: 15px;
+    }
     &__boxes {
         display: flex;
         justify-content: space-between;
         padding-top: 49px;
+        @include mobile {
+            display: inline;
+        }
+        @include tablet {
+            display: inline;
+        }
     }
     &__img {
         position: absolute;
@@ -27,6 +41,23 @@
         height: 260px;
         box-shadow: 0 0 24px rgba(64, 199, 255, 0.32);
         background-color: #ffffff;
+        @include laptop {
+            width: 32%;
+            height: auto;
+            padding-bottom: 15px;
+        }
+        @include tablet {
+            width: 100%;
+            height: auto;
+            padding-bottom: 15px;
+            margin-top: 20px;
+        }
+        @include mobile {
+            width: 100%;
+            height: auto;
+            padding-bottom: 15px;
+            margin-top: 20px;
+        }
         &:hover {
             background-color: rgba(64, 199, 255, 0.32);
             cursor: pointer;

@@ -1,0 +1,169 @@
+.footer {
+    height: 900px;
+    width: 100%;
+    @include laptop {
+        height: auto;
+        padding-bottom: 20px;
+    }
+    @include tablet {
+        height: auto;
+        padding-bottom: 20px;
+    }
+    @include mobile {
+        height: auto;
+        padding-bottom: 20px;
+    }
+    &__img {
+        top: 900px;
+        position: relative;
+        @include laptop {
+            display: none;
+        }
+        @include tablet {
+            display: none;
+        }
+        @include mobile {
+            display: none;
+        }
+    }
+    &__boxes {}
+}
+
+.left-box {
+    width: 40%;
+    height: 474px;
+    box-shadow: 0 0 24px rgba(64, 199, 255, 0.32);
+    background-color: #ffffff;
+    float: left;
+    @include laptop {
+        width: 100%;
+        float: none;
+    }
+    @include tablet {
+        width: 100%;
+        float: none;
+    }
+    @include mobile {
+        width: 100%;
+        float: none;
+    }
+    &__tittle {
+        color: #f26522;
+        font-family: 'Roboto';
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 50px;
+        text-align: left;
+        padding-left: 29px;
+        padding-top: 60px;
+    }
+    &__desc {
+        color: #707070;
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: left;
+        padding-left: 28px;
+        padding-top: 21px;
+    }
+    &__input {
+        width: 88%;
+        height: 60px;
+        border: 1px solid #e0e6e6;
+        background-color: #ffffff;
+        align-items: center;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 60px;
+        text-align: left;
+        padding-left: 22px;
+        margin-left: 31px;
+        margin-top: 51px;
+    }
+    &__btn {
+        width: 88%;
+        height: 60px;
+        margin-left: 31px;
+        margin-top: 35px;
+    }
+}
+
+.right-box {
+    margin-left: 20px;
+    width: 58%;
+    height: 690px;
+    box-shadow: 0 0 24px rgba(64, 199, 255, 0.32);
+    background-color: #ffffff;
+    float: right;
+    @include laptop {
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+    }
+    @include tablet {
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+    }
+    @include mobile {
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+    }
+    &__tittle {
+        color: #333333;
+        font-family: 'Roboto';
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 60px;
+        text-align: left;
+        margin-left: 25px;
+        margin-top: 39px;
+    }
+    &__input {
+        width: 93%;
+        height: 50px;
+        border: 1px solid #cff0ff;
+        background-color: #ffffff;
+        margin-left: 25px;
+        margin-top: 19px;
+        padding-left: 17px;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 60px;
+        &--height {
+            height: 211px;
+            padding-bottom: 25%;
+        }
+    }
+    &__btn {
+        width: 32%;
+        height: 55px;
+        padding-bottom: 5px;
+        margin-left: 65%;
+        margin-top: 20px;
+    }
+}
+
+.copyright {
+    width: 100%;
+    height: 100px;
+    background-color: #1e1e1e;
+    margin-top: 230px;
+    @include mobile {
+        height: auto;
+        padding-bottom: 20px;
+    }
+    &__text {
+        color: #bdbdbd;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 60px;
+        text-align: center;
+        padding-top: 25px;
+    }
+}
